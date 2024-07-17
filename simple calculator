@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n=1;
+    float a,b;
+     char opt;
+while(n==1){
+ cout <<"SIMPLE CALCULATOR"<<endl;
+    cout <<"enter first number:"<<endl;
+    cin >> a;
+    cout <<"enter second number:"<<endl;
+    cin >> b;
+    if(b==0){
+      cout << "0 is not valid for denominator try again"<<endl;
+      continue;
+    }
+   cout <<"choose yourb operation (+,-,*,/):"<<endl;
+   cin >> opt;
+    switch (opt)
+    {
+    case '+':cout <<"your answer is "<<a+b<<endl;
+        break;
+     case '-':cout <<"your answer is "<<a-b<<endl;
+        break; 
+     case '*':cout <<"your answer is "<<a*b<<endl;
+        break;
+     case '/':cout <<"your answer is "<<a/b<<endl;
+        break;   
+    
+    default:cout <<"you enter a wrong choice"<<endl;
+       continue;
+    }
+    cout << "for one more calculation enter 1 or enter 0"<<endl;
+    cin >>n;
+    }
+   
+
+    return 0;
+}
